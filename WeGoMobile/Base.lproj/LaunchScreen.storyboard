@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,40 +12,44 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WeGoMobile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="25" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H0f-bM-swA">
-                                <rect key="frame" x="49" y="378" width="238" height="0.0"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Made by Colby Tang for Spring 2020 COSC 3326-02 and COSC 3339-01 at St. Edward's University" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2t-N7-Lev">
+                                <rect key="frame" x="36" y="770" width="343" height="80"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team 12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIh-ZA-PuE">
+                                <rect key="frame" x="140.66666666666669" y="516" width="132.66666666666669" height="29.666666666666629"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="H0f-bM-swA" secondAttribute="height" multiplier="272:55" id="eb7-m1-Yps"/>
+                                    <constraint firstAttribute="width" secondItem="rIh-ZA-PuE" secondAttribute="height" multiplier="94:21" id="DfW-By-te6"/>
+                                    <constraint firstAttribute="width" secondItem="rIh-ZA-PuE" secondAttribute="height" multiplier="94:21" id="x1V-8m-wcL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WeGoMobile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="25" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H0f-bM-swA">
+                                <rect key="frame" x="-94.666666666666686" y="387" width="603.33333333333337" height="122"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="H0f-bM-swA" secondAttribute="height" multiplier="272:55" id="URA-20-A9j"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="46"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Made by Colby Tang for Spring 2020 COSC 3339-01 at St. Edward's University" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2t-N7-Lev">
-                                <rect key="frame" x="18" y="698" width="342" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Team 12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIh-ZA-PuE">
-                                <rect key="frame" x="140" y="441" width="94" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="H0f-bM-swA" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="2Bb-Uc-aar"/>
-                            <constraint firstItem="rIh-ZA-PuE" firstAttribute="top" secondItem="H0f-bM-swA" secondAttribute="bottom" constant="8" id="Swx-9R-IFJ"/>
-                            <constraint firstItem="rIh-ZA-PuE" firstAttribute="centerX" secondItem="H0f-bM-swA" secondAttribute="centerX" id="gTs-Ib-3yQ"/>
-                            <constraint firstItem="H0f-bM-swA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="334" id="ixJ-qD-dph"/>
-                            <constraint firstItem="H0f-bM-swA" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="knS-z1-daG"/>
-                            <constraint firstItem="rIh-ZA-PuE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="140" id="xup-8R-KrZ"/>
+                            <constraint firstItem="rIh-ZA-PuE" firstAttribute="centerX" secondItem="o2t-N7-Lev" secondAttribute="centerX" id="AK7-fy-NUu"/>
+                            <constraint firstItem="rIh-ZA-PuE" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="D7Y-nz-MfK"/>
+                            <constraint firstItem="H0f-bM-swA" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Dct-bg-OLd"/>
+                            <constraint firstItem="rIh-ZA-PuE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="140.66666666666666" id="SG7-UV-Xam"/>
+                            <constraint firstItem="H0f-bM-swA" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="qFY-Qb-lFe"/>
+                            <constraint firstAttribute="bottom" secondItem="rIh-ZA-PuE" secondAttribute="bottom" constant="350.33333333333331" id="xpR-Gy-Yza"/>
+                            <constraint firstItem="rIh-ZA-PuE" firstAttribute="top" secondItem="H0f-bM-swA" secondAttribute="bottom" constant="7" id="zVZ-TT-Mnj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

@@ -14,6 +14,7 @@
 		A7D4B052245A2C6500AA242F /* WeGoMobile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A7D4B050245A2C6500AA242F /* WeGoMobile.xcdatamodeld */; };
 		A7D4B054245A2C6600AA242F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7D4B053245A2C6600AA242F /* Assets.xcassets */; };
 		A7D4B057245A2C6600AA242F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7D4B055245A2C6600AA242F /* LaunchScreen.storyboard */; };
+		A7D4B05F245A502A00AA242F /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D4B05E245A502A00AA242F /* APIRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A7D4B053245A2C6600AA242F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7D4B056245A2C6600AA242F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7D4B058245A2C6600AA242F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7D4B05E245A502A00AA242F /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				A7D4B047245A2C6500AA242F /* AppDelegate.swift */,
 				A7D4B049245A2C6500AA242F /* SceneDelegate.swift */,
 				A7D4B04B245A2C6500AA242F /* ViewController.swift */,
+				A7D4B05E245A502A00AA242F /* APIRequest.swift */,
 				A7D4B04D245A2C6500AA242F /* Main.storyboard */,
 				A7D4B053245A2C6600AA242F /* Assets.xcassets */,
 				A7D4B055245A2C6600AA242F /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 				A7D4B04C245A2C6500AA242F /* ViewController.swift in Sources */,
 				A7D4B052245A2C6500AA242F /* WeGoMobile.xcdatamodeld in Sources */,
 				A7D4B048245A2C6500AA242F /* AppDelegate.swift in Sources */,
+				A7D4B05F245A502A00AA242F /* APIRequest.swift in Sources */,
 				A7D4B04A245A2C6500AA242F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
