@@ -43,10 +43,16 @@ class ViewController: UIViewController {
             guard error == nil else {
                 print("error calling POST on /request/1")
                 print(error!)
+                DispatchQueue.main.async {
+                    self.createAlert (title: "Response from Server", message: "error calling POST on /request/1")
+                }
                 return
             }
             guard let responseData = data else {
                 print("Error: did not receive data")
+                DispatchQueue.main.async {
+                    self.createAlert (title: "Response from Server", message: "Error: did not receive data")
+                }
                 return
             }
 
@@ -63,6 +69,12 @@ class ViewController: UIViewController {
                 return
             }
             print("The First Name is: \(first_name)")
+            
+            guard let last_name = serverResponse["last_name"] as? String else {
+                print("Could not get last_name as String from JSON")
+                return
+            }
+            print("The Last Name is: \(last_name)")
         } catch  {
             if let stringResponse = String(data: data!, encoding: String.Encoding.utf8) as String? {
                 print (stringResponse)
@@ -71,7 +83,10 @@ class ViewController: UIViewController {
                 }
             }
             else {
-                print("error parsing response from POST on /serverResponse")
+                print("Error parsing response from POST on /serverResponse")
+                DispatchQueue.main.async {
+                    self.createAlert (title: "Response from Server", message: "Error parsing response from POST on /serverResponse")
+                }
             }
             return
         }
