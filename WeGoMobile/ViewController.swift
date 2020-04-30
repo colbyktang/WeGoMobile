@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func btn_SignIn(_ sender: UIButton) {
+        
         let params = ["username":txt_Username.text, "password":txt_Password.text]
         POSTRequest(server: "demand", endpoint: "api/cs/login", params: params)
     }
@@ -65,11 +66,9 @@ class ViewController: UIViewController {
         } catch  {
             if let stringResponse = String(data: data!, encoding: String.Encoding.utf8) as String? {
                 print (stringResponse)
-                let alertController = UIAlertController(title: "Response from Server", message: "FAILED", preferredStyle: UIAlertController.Style.alert)
-                
-                alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-                
-                self.present(alertController, animated: true, completion: nil)
+                DispatchQueue.main.async {
+                    self.createAlert (title: "Response from Server", message: stringResponse)
+                }
             }
             else {
                 print("error parsing response from POST on /serverResponse")
@@ -83,7 +82,11 @@ class ViewController: UIViewController {
     
     func createAlert (title: String, message: String) {
         print ("Create Alert: Title: \(title) Message: \(message)")
-
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        
+        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        
+        present(alertController, animated: true, completion: nil)
     }
 }
 

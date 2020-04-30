@@ -92,7 +92,7 @@
         <!--WeGo Registration-->
         <scene sceneID="Xu7-aX-YTk">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="v0e-kk-b6w" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="v0e-kk-b6w" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IQK-hF-LeX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -163,9 +163,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="XIQ-DV-fTO"/>
                     </view>
-                    <navigationItem key="navigationItem" title="WeGo Registration" id="Uwm-gT-nBh">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="Jgf-6v-cTi"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="WeGo Registration" id="Uwm-gT-nBh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kNf-F0-PLk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
