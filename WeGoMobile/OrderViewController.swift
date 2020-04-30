@@ -7,12 +7,21 @@
 //
 
 import UIKit
+import MapKit
+import CoreLocation
 
 class OrderViewController: UIViewController {
-
+    let locationManager = CLLocationManager()
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        locationManager.requestWhenInUseAuthorization()
+        var currentLoc: CLLocation!
+        if(CLLocationManager.authorizationStatus() == .authorizedWhenInUse ||
+      CLLocationManager.authorizationStatus() == .authorizedAlways) {
+           currentLoc = locationManager.location
+           //print(currentLoc.coordinate.latitude)
+           //print(currentLoc.coordinate.longitude)
+        }
         // Do any additional setup after loading the view.
     }
     

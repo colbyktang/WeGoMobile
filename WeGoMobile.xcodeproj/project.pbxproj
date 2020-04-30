@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A70C8088245A78B5005BEB47 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70C8087245A78B5005BEB47 /* RegisterViewController.swift */; };
+		A754BC1B245B94AF007021A3 /* St. Edward's University.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A754BC1A245B94AF007021A3 /* St. Edward's University.gpx */; };
+		A754BC1D245B966A007021A3 /* WeGoMobile in Resources */ = {isa = PBXBuildFile; fileRef = A754BC1C245B966A007021A3 /* WeGoMobile */; };
 		A7D11769245AB01F00481058 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D11768245AB01F00481058 /* DashboardViewController.swift */; };
 		A7D1176B245AD29B00481058 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D1176A245AD29B00481058 /* OrderViewController.swift */; };
 		A7D4B048245A2C6500AA242F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D4B047245A2C6500AA242F /* AppDelegate.swift */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		A70C8087245A78B5005BEB47 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		A754BC1A245B94AF007021A3 /* St. Edward's University.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "St. Edward's University.gpx"; sourceTree = "<group>"; };
+		A754BC1C245B966A007021A3 /* WeGoMobile */ = {isa = PBXFileReference; lastKnownFileType = folder; name = WeGoMobile; sourceTree = "<group>"; };
 		A7D11768245AB01F00481058 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		A7D1176A245AD29B00481058 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		A7D4B044245A2C6500AA242F /* WeGoMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeGoMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,7 +52,9 @@
 		A7D4B03B245A2C6500AA242F = {
 			isa = PBXGroup;
 			children = (
+				A754BC1A245B94AF007021A3 /* St. Edward's University.gpx */,
 				A7D4B046245A2C6500AA242F /* WeGoMobile */,
+				A754BC1C245B966A007021A3 /* WeGoMobile */,
 				A7D4B045245A2C6500AA242F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -137,9 +143,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A754BC1B245B94AF007021A3 /* St. Edward's University.gpx in Resources */,
 				A7D4B057245A2C6600AA242F /* LaunchScreen.storyboard in Resources */,
 				A7D4B054245A2C6600AA242F /* Assets.xcassets in Resources */,
 				A7D4B04F245A2C6500AA242F /* Main.storyboard in Resources */,
+				A754BC1D245B966A007021A3 /* WeGoMobile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
