@@ -22,6 +22,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func btn_SignIn(_ sender: UIButton) {
+        if (txt_Username.text == "") {
+            createAlert(title: "Error", message: "Username is blank!")
+            return
+        }
+        
+        if (txt_Password.text == "") {
+            createAlert(title: "Error", message: "Password is blank!")
+            return
+        }
         
         let params = ["username":txt_Username.text, "password":txt_Password.text]
         POSTRequest(server: "demand", endpoint: "api/cs/login", params: params)
@@ -75,6 +84,19 @@ class ViewController: UIViewController {
                 return
             }
             print("The Last Name is: \(last_name)")
+            
+            if let response = response as? HTTPURLResponse {
+                if response.statusCode == 200 {
+                    DispatchQueue.main.async {
+                        let defaults = UserDefaults.standard
+                        defaults.set(first_name, forKey:"first_name")
+                        defaults.set(last_name, forKey:"last_name")
+                        defaults.set(true, forKey:"logged_in")
+                        
+                        self.performSegue(withIdentifier: "segue_successLogin", sender: self)
+                    }
+                }
+            }
         } catch  {
             if let stringResponse = String(data: data!, encoding: String.Encoding.utf8) as String? {
                 print (stringResponse)
@@ -103,5 +125,6 @@ class ViewController: UIViewController {
         
         present(alertController, animated: true, completion: nil)
     }
+    
 }
 

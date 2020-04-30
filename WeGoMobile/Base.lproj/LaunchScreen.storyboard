@@ -15,8 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Made by Colby Tang for Spring 2020 COSC 3326-02 and COSC 3339-01 at St. Edward's University" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2t-N7-Lev">
-                                <rect key="frame" x="36" y="770" width="343" height="80"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Made by Colby Tang for Spring 2020 COSC 3326-02 and COSC 3339-01 at St. Edward's University" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2t-N7-Lev">
+                                <rect key="frame" x="20" y="752" width="374" height="98"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -43,6 +43,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="o2t-N7-Lev" secondAttribute="bottom" constant="12" id="3GP-Tj-41j"/>
                             <constraint firstItem="rIh-ZA-PuE" firstAttribute="centerX" secondItem="o2t-N7-Lev" secondAttribute="centerX" id="AK7-fy-NUu"/>
                             <constraint firstItem="rIh-ZA-PuE" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="D7Y-nz-MfK"/>
                             <constraint firstItem="H0f-bM-swA" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Dct-bg-OLd"/>
@@ -56,7 +57,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52" y="374.6305418719212"/>
+            <point key="canvasLocation" x="50.724637681159422" y="374.33035714285711"/>
         </scene>
     </scenes>
 </document>
