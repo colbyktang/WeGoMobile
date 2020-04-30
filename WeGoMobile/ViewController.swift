@@ -12,7 +12,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let defaults = UserDefaults.standard
+        if defaults.bool(forKey: "logged_in") == true {
+            self.performSegue(withIdentifier: "segue_successLogin", sender: self)
+        }
         // Do any additional setup after loading the view.
     }
     
@@ -89,6 +93,7 @@ class ViewController: UIViewController {
                 if response.statusCode == 200 {
                     DispatchQueue.main.async {
                         let defaults = UserDefaults.standard
+                        defaults.set(params["username"]!, forKey:"username")
                         defaults.set(first_name, forKey:"first_name")
                         defaults.set(last_name, forKey:"last_name")
                         defaults.set(true, forKey:"logged_in")

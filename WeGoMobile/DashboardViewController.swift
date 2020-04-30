@@ -9,6 +9,16 @@
 import UIKit
 
 class DashboardViewController: UITableViewController {
+    override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let defaults = UserDefaults.standard
@@ -19,6 +29,14 @@ class DashboardViewController: UITableViewController {
     }
     
     @IBOutlet weak var lbl_welcome: UILabel!
+    @IBAction func btn_signout(_ sender: UIButton) {
+        let defaults = UserDefaults.standard
+        defaults.set("", forKey:"username")
+        defaults.set("", forKey:"first_name")
+        defaults.set("", forKey:"last_name")
+        defaults.set(false, forKey:"logged_in")
+        self.performSegue(withIdentifier: "segue_signout", sender: self)
+    }
     
     /*
     // MARK: - Navigation

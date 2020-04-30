@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A70C8088245A78B5005BEB47 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70C8087245A78B5005BEB47 /* RegisterViewController.swift */; };
 		A7D11769245AB01F00481058 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D11768245AB01F00481058 /* DashboardViewController.swift */; };
+		A7D1176B245AD29B00481058 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D1176A245AD29B00481058 /* OrderViewController.swift */; };
 		A7D4B048245A2C6500AA242F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D4B047245A2C6500AA242F /* AppDelegate.swift */; };
 		A7D4B04A245A2C6500AA242F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D4B049245A2C6500AA242F /* SceneDelegate.swift */; };
 		A7D4B04C245A2C6500AA242F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D4B04B245A2C6500AA242F /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		A70C8087245A78B5005BEB47 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		A7D11768245AB01F00481058 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		A7D1176A245AD29B00481058 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		A7D4B044245A2C6500AA242F /* WeGoMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeGoMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7D4B047245A2C6500AA242F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7D4B049245A2C6500AA242F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				A7D4B049245A2C6500AA242F /* SceneDelegate.swift */,
 				A7D4B04B245A2C6500AA242F /* ViewController.swift */,
 				A7D4B04D245A2C6500AA242F /* Main.storyboard */,
+				A7D1176A245AD29B00481058 /* OrderViewController.swift */,
 				A7D11768245AB01F00481058 /* DashboardViewController.swift */,
 				A70C8087245A78B5005BEB47 /* RegisterViewController.swift */,
 				A7D4B053245A2C6600AA242F /* Assets.xcassets */,
@@ -150,6 +153,7 @@
 				A7D4B04C245A2C6500AA242F /* ViewController.swift in Sources */,
 				A7D11769245AB01F00481058 /* DashboardViewController.swift in Sources */,
 				A7D4B052245A2C6500AA242F /* WeGoMobile.xcdatamodeld in Sources */,
+				A7D1176B245AD29B00481058 /* OrderViewController.swift in Sources */,
 				A7D4B048245A2C6500AA242F /* AppDelegate.swift in Sources */,
 				A70C8088245A78B5005BEB47 /* RegisterViewController.swift in Sources */,
 				A7D4B04A245A2C6500AA242F /* SceneDelegate.swift in Sources */,
