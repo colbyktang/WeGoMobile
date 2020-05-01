@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,17 +12,17 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Made by Colby Tang for Spring 2020 COSC 3326-02 and COSC 3339-01 at St. Edward's University" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2t-N7-Lev">
-                                <rect key="frame" x="20" y="752" width="374" height="98"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Made by Colby Tang for Spring 2020 COSC 3326-02 and COSC 3339-01 at St. Edward's University" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2t-N7-Lev">
+                                <rect key="frame" x="0.66666666666665719" y="701.33333333333337" width="374" height="64.666666666666629"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team 12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIh-ZA-PuE">
-                                <rect key="frame" x="140.66666666666669" y="516" width="132.66666666666669" height="29.666666666666629"/>
+                                <rect key="frame" x="140.66666666666666" y="440.66666666666669" width="93.666666666666657" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="rIh-ZA-PuE" secondAttribute="height" multiplier="94:21" id="DfW-By-te6"/>
                                     <constraint firstAttribute="width" secondItem="rIh-ZA-PuE" secondAttribute="height" multiplier="94:21" id="x1V-8m-wcL"/>
@@ -32,7 +32,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WeGoMobile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="25" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H0f-bM-swA">
-                                <rect key="frame" x="-94.666666666666686" y="387" width="603.33333333333337" height="122"/>
+                                <rect key="frame" x="50.333333333333343" y="378.33333333333331" width="274.33333333333326" height="55.333333333333314"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="H0f-bM-swA" secondAttribute="height" multiplier="272:55" id="URA-20-A9j"/>
                                 </constraints>
@@ -43,12 +43,15 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="o2t-N7-Lev" secondAttribute="bottom" constant="12" id="3GP-Tj-41j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="o2t-N7-Lev" secondAttribute="bottom" constant="12" id="4Qy-bg-bYY"/>
                             <constraint firstItem="rIh-ZA-PuE" firstAttribute="centerX" secondItem="o2t-N7-Lev" secondAttribute="centerX" id="AK7-fy-NUu"/>
                             <constraint firstItem="rIh-ZA-PuE" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="D7Y-nz-MfK"/>
                             <constraint firstItem="H0f-bM-swA" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Dct-bg-OLd"/>
                             <constraint firstItem="rIh-ZA-PuE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="140.66666666666666" id="SG7-UV-Xam"/>
+                            <constraint firstItem="o2t-N7-Lev" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="a3T-3j-NHd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="o2t-N7-Lev" secondAttribute="trailing" id="bQv-5j-wo6"/>
                             <constraint firstItem="H0f-bM-swA" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="qFY-Qb-lFe"/>
+                            <constraint firstItem="o2t-N7-Lev" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="tfm-Ma-l8p"/>
                             <constraint firstAttribute="bottom" secondItem="rIh-ZA-PuE" secondAttribute="bottom" constant="350.33333333333331" id="xpR-Gy-Yza"/>
                             <constraint firstItem="rIh-ZA-PuE" firstAttribute="top" secondItem="H0f-bM-swA" secondAttribute="bottom" constant="7" id="zVZ-TT-Mnj"/>
                         </constraints>

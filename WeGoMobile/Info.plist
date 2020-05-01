@@ -57,6 +57,8 @@
 	<string>Application wants to use your location</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Application wants to use your location</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Application wants to use your location</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
