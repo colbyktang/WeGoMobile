@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Confirmation View Controller-->
         <scene sceneID="Ce4-de-dee">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="6LG-RF-2yL" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="6LG-RF-2yL" customClass="ConfirmationViewController" customModule="WeGoMobile" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0YL-Wf-pEc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,14 +38,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ETA" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhd-5n-iGI">
-                                <rect key="frame" x="20" y="203" width="368" height="63"/>
+                                <rect key="frame" x="20" y="203" width="368" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vehicle Type" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58R-Il-hfc">
-                                <rect key="frame" x="20" y="274" width="368" height="63"/>
+                                <rect key="frame" x="20" y="246" width="368" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Service: WeParty" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RtV-tJ-DIQ">
+                                <rect key="frame" x="20" y="291" width="368" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
@@ -55,8 +62,8 @@
                                 <rect key="frame" x="0.0" y="425" width="414" height="408"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Service: WeParty" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RtV-tJ-DIQ">
-                                <rect key="frame" x="23" y="330" width="368" height="63"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Party Size" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CwM-rV-3pz">
+                                <rect key="frame" x="20" y="342" width="368" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
@@ -67,6 +74,13 @@
                         <viewLayoutGuide key="safeArea" id="b13-0d-6zM"/>
                     </view>
                     <navigationItem key="navigationItem" id="8Uk-jU-yVb"/>
+                    <connections>
+                        <outlet property="map" destination="Cab-SY-NDf" id="sKg-u4-sxM"/>
+                        <outlet property="txt_eta" destination="hhd-5n-iGI" id="xxx-eI-06e"/>
+                        <outlet property="txt_orderID" destination="hsG-5v-VCG" id="hwr-L3-3uC"/>
+                        <outlet property="txt_partySize" destination="CwM-rV-3pz" id="l7M-BA-LCV"/>
+                        <outlet property="txt_vehicleType" destination="58R-Il-hfc" id="Lac-ew-ihu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qqA-XY-4Sb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -318,10 +332,10 @@ U2lnbiAIT3V0A
                                             <segue destination="6LG-RF-2yL" kind="show" id="6eX-9t-glz"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="U8P-0e-2Nq" detailTextLabel="XgD-0f-zG2" rowHeight="67" style="IBUITableViewCellStyleSubtitle" id="Ufs-L6-Syn">
+                                    <tableViewCell clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="U8P-0e-2Nq" detailTextLabel="XgD-0f-zG2" rowHeight="67" style="IBUITableViewCellStyleSubtitle" id="Ufs-L6-Syn">
                                         <rect key="frame" x="0.0" y="455" width="414" height="67"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ufs-L6-Syn" id="B8s-vb-Uju">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ufs-L6-Syn" id="B8s-vb-Uju">
                                             <rect key="frame" x="0.0" y="0.0" width="383" height="67"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -342,10 +356,10 @@ U2lnbiAIT3V0A
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Sc7-if-844" detailTextLabel="A1x-ZK-le7" rowHeight="67" style="IBUITableViewCellStyleSubtitle" id="yhj-5T-jcD">
+                                    <tableViewCell clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Sc7-if-844" detailTextLabel="A1x-ZK-le7" rowHeight="67" style="IBUITableViewCellStyleSubtitle" id="yhj-5T-jcD">
                                         <rect key="frame" x="0.0" y="522" width="414" height="67"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yhj-5T-jcD" id="pYb-Q2-0yN">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yhj-5T-jcD" id="pYb-Q2-0yN">
                                             <rect key="frame" x="0.0" y="0.0" width="383" height="67"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -573,8 +587,8 @@ U2lnbiAIT3V0A
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="NVa-oN-7Zd"/>
-        <segue reference="yFY-wC-LEl"/>
-        <segue reference="rHe-Dd-A5G"/>
+        <segue reference="21Z-ti-AsP"/>
+        <segue reference="6eX-9t-glz"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="truckBackground" width="533" height="300"/>

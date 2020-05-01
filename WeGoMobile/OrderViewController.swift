@@ -40,12 +40,12 @@ class OrderViewController: UIViewController, CLLocationManagerDelegate {
         }
         let defaults = UserDefaults.standard
         let username = defaults.string(forKey:"username")
+        let partySize = segmented_partySize.titleForSegment(at: segmented_partySize.selectedSegmentIndex)
+        defaults.set(partySize, forKey:"party_size")
         
-        let params = ["stop": txt_location.text!, "size": segmented_partySize.selectedSegmentIndex, "vehicle_type": "VAN", "username": username] as [String : Any]
+        let params = ["stops": [txt_location.text!, "3001 S Congress Avenue, Austin, TX"], "size": partySize, "vehicle_type": "VAN", "username": username] as [String : Any]
         POSTRequest (server: "demand", endpoint: "api/backend/order", params: params)
     }
-    
-    
     
     func POSTRequest (server: String, endpoint: String, params: Dictionary<String, Any?>) {
         print ("server: \(server) endpoint: \(endpoint) params: \(params)")
@@ -93,13 +93,20 @@ class OrderViewController: UIViewController, CLLocationManagerDelegate {
             }
             print("The Order_ID is: \(order_id)")
             
+            guard let vehicle_type = serverResponse["vehicle_type"] as? String else {
+                print("Could not get vehicle_type as String from JSON")
+                return
+            }
+            print("The vehicle_type is: \(vehicle_type)")
+            
+            
             if let response = response as? HTTPURLResponse {
                 if response.statusCode == 200 {
                     DispatchQueue.main.async {
                         let defaults = UserDefaults.standard
                         defaults.set(eta, forKey:"eta")
                         defaults.set(order_id, forKey:"order_id")
-                        
+                        defaults.set(vehicle_type, forKey:"vehicle_type")
                         self.performSegue(withIdentifier: "segue_successOrder", sender: self)
                     }
                 }

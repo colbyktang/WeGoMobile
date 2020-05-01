@@ -10,6 +10,7 @@
 		A70C8088245A78B5005BEB47 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70C8087245A78B5005BEB47 /* RegisterViewController.swift */; };
 		A70D3D93245B9B2900F23AC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7D4B053245A2C6600AA242F /* Assets.xcassets */; };
 		A70D3D95245B9D4800F23AC7 /* St. Edward's University.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A70D3D94245B9BB100F23AC7 /* St. Edward's University.gpx */; };
+		A70D3D97245BA9EC00F23AC7 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70D3D96245BA9EC00F23AC7 /* ConfirmationViewController.swift */; };
 		A754BC1F245B9825007021A3 /* WeeSendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754BC1E245B9825007021A3 /* WeeSendViewController.swift */; };
 		A7D11769245AB01F00481058 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D11768245AB01F00481058 /* DashboardViewController.swift */; };
 		A7D1176B245AD29B00481058 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D1176A245AD29B00481058 /* OrderViewController.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		A70C8087245A78B5005BEB47 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		A70D3D94245B9BB100F23AC7 /* St. Edward's University.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "St. Edward's University.gpx"; sourceTree = "<group>"; };
+		A70D3D96245BA9EC00F23AC7 /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
 		A754BC1C245B966A007021A3 /* WeGoMobile */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WeGoMobile; sourceTree = "<group>"; };
 		A754BC1E245B9825007021A3 /* WeeSendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeSendViewController.swift; sourceTree = "<group>"; };
 		A7D11768245AB01F00481058 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				A7D4B04B245A2C6500AA242F /* ViewController.swift */,
 				A7D4B04D245A2C6500AA242F /* Main.storyboard */,
 				A7D1176A245AD29B00481058 /* OrderViewController.swift */,
+				A70D3D96245BA9EC00F23AC7 /* ConfirmationViewController.swift */,
 				A7D11768245AB01F00481058 /* DashboardViewController.swift */,
 				A70C8087245A78B5005BEB47 /* RegisterViewController.swift */,
 				A7D4B053245A2C6600AA242F /* Assets.xcassets */,
@@ -162,6 +165,7 @@
 				A754BC1F245B9825007021A3 /* WeeSendViewController.swift in Sources */,
 				A7D4B04C245A2C6500AA242F /* ViewController.swift in Sources */,
 				A7D11769245AB01F00481058 /* DashboardViewController.swift in Sources */,
+				A70D3D97245BA9EC00F23AC7 /* ConfirmationViewController.swift in Sources */,
 				A7D4B052245A2C6500AA242F /* WeGoMobile.xcdatamodeld in Sources */,
 				A7D1176B245AD29B00481058 /* OrderViewController.swift in Sources */,
 				A7D4B048245A2C6500AA242F /* AppDelegate.swift in Sources */,
